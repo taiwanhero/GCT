@@ -23,16 +23,16 @@
       background: linear-gradient(to bottom right, #1e3c72, #2a5298);
       color: #ffffff;
       padding: 20px;
+      position: relative;
     }
 
     .container {
       text-align: center;
-      padding: 20px;
+      padding: 40px;
       background: rgba(255, 255, 255, 0.1);
       border-radius: 15px;
       box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-      width: 100%;
-      max-width: 600px;
+      width: 80%;
     }
 
     .container h1 {
@@ -67,37 +67,32 @@
     }
 
     .info {
-      margin-top: 20px;
-      font-size: 0.9rem;
-      color: #ffffff;
-      text-align: left;
-      width: 100%;
-      max-width: 600px;
-      background: rgba(255, 255, 255, 0.1);
-      padding: 15px;
-      border-radius: 10px;
-      line-height: 1.6;
-    }
-
-    .info h2 {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-      padding-bottom: 5px;
-    }
-
-    .info p {
-      margin-bottom: 10px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
     }
 
     .info a {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
       color: #add8e6;
       text-decoration: none;
-      word-break: break-word;
+      font-size: 1.2rem;
+      transition: background 0.3s, transform 0.3s;
     }
 
     .info a:hover {
-      text-decoration: underline;
+      background: rgba(255, 255, 255, 0.3);
+      transform: scale(1.1);
     }
 
     @media (max-width: 600px) {
@@ -113,14 +108,6 @@
         font-size: 0.9rem;
         padding: 10px 20px;
       }
-
-      .info h2 {
-        font-size: 1rem;
-      }
-
-      .info p {
-        font-size: 0.85rem;
-      }
     }
   </style>
 </head>
@@ -132,14 +119,10 @@
     <a href="https://app.uniswap.org/tokens/ethereum/0x27CE6771DDe6e7B983468444a17027a82e8b83fC" class="button">Start Trading</a>
   </div>
   <div class="info">
-    <h2># GCT</h2>
-    <p>A total 20241124 GCT. Global Champion Taiwan 2024.</p>
-    <h2># CoinMarket</h2>
-    <p><a href="https://coinmarketcap.com/dexscan/ethereum/0xe1d14e4d0c91bd64d44ba0ca6c22bfa4b400b50f">https://coinmarketcap.com/dexscan/ethereum/0xe1d14e4d0c91bd64d44ba0ca6c22bfa4b400b50f</a></p>
-    <h2># CoinGecko</h2>
-    <p><a href="https://www.geckoterminal.com/eth/pools/0xe1d14e4d0c91bd64d44ba0ca6c22bfa4b400b50f">https://www.geckoterminal.com/eth/pools/0xe1d14e4d0c91bd64d44ba0ca6c22bfa4b400b50f</a></p>
-    <h2>X: taiwanhero2024</h2>
-    <h2>MailTo: taiwanhero2024@gmail.com</h2>
+    <a href="https://coinmarketcap.com/dexscan/ethereum/0xe1d14e4d0c91bd64d44ba0ca6c22bfa4b400b50f" title="CoinMarket">&#9733;</a>
+    <a href="https://www.geckoterminal.com/eth/pools/0xe1d14e4d0c91bd64d44ba0ca6c22bfa4b400b50f" title="CoinGecko">&#128200;</a>
+    <a href="mailto:taiwanhero2024@gmail.com" title="Email">&#9993;</a>
+    <a href="https://twitter.com/taiwanhero2024" title="Twitter">&#128038;</a>
   </div>
 </body>
 
